@@ -1,0 +1,23 @@
+{
+   "type": "sqlite",
+   "database": "src/database/data/db.sqlite",
+   "synchronize": true,
+   "logging": true,
+   "cache": true,
+   "migrationsRun": true,
+   "migrationsTableName": "migration_history",
+   "entities": [
+      "src/database/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/database/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/database/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/database/entity",
+      "migrationsDir": "src/database/migration",
+      "subscribersDir": "src/database/subscriber"
+   }
+}
